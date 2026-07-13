@@ -1,0 +1,88 @@
+sponsor-vault/
+├── .env.example
+├── .eslintrc.json
+├── .prettierrc
+├── components.json
+├── docker-compose.yml
+├── Dockerfile
+├── next.config.ts
+├── package.json
+├── playwright.config.ts
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── vitest.config.ts
+├── middleware.ts
+├── supabase/
+│   ├── config.toml
+│   ├── migrations/
+│   │   ├── 20260713000000_core_schema.sql
+│   │   └── 20260713000001_seed_data.sql
+│   └── types.ts
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── providers.tsx
+│   │   ├── middleware.tsx
+│   │   ├── sitemap.ts
+│   │   ├── robots.ts
+│   │   ├── (auth)/
+│   │   │   ├── login/page.tsx
+│   │   │   ├── register/page.tsx
+│   │   │   ├── verify-email/page.tsx
+│   │   │   ├── forgot-password/page.tsx
+│   │   │   └── reset-password/page.tsx
+│   │   ├── (dashboard)/
+│   │   │   ├── dashboard/page.tsx
+│   │   │   ├── dashboard/favorites/page.tsx
+│   │   │   ├── dashboard/searches/page.tsx
+│   │   │   ├── dashboard/billing/page.tsx
+│   │   │   └── dashboard/settings/page.tsx
+│   │   ├── (admin)/
+│   │   │   ├── admin/page.tsx
+│   │   │   ├── admin/companies/page.tsx
+│   │   │   ├── admin/subscriptions/page.tsx
+│   │   │   └── admin/queue/page.tsx
+│   │   ├── companies/
+│   │   │   ├── page.tsx
+│   │   │   └── [id]/page.tsx
+│   │   ├── blog/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/page.tsx
+│   │   └── api/
+│   │       ├── auth/callback/route.ts
+│   │       ├── webhooks/paypal/route.ts
+│   │       ├── search/route.ts
+│   │       └── ai/match/route.ts
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── button.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   └── dropdown-menu.tsx
+│   │   ├── shared/
+│   │   │   ├── navbar.tsx
+│   │   │   ├── footer.tsx
+│   │   │   └── sponsor-card.tsx
+│   │   ├── dashboard/
+│   │   └── admin/
+│   ├── config/
+│   │   ├── site.ts
+│   │   └── plans.ts
+│   ├── hooks/
+│   │   ├── use-auth.ts
+│   │   └── use-debounce.ts
+│   ├── lib/
+│   │   ├── supabase.ts
+│   │   ├── openai.ts
+│   │   ├── paypal.ts
+│   │   ├── resend.ts
+│   │   └── utils.ts
+│   ├── services/
+│   │   ├── company.ts
+│   │   ├── subscription.ts
+│   │   └── ai.ts
+│   └── types/
+│       ├── index.ts
+│       └── database.types.ts
